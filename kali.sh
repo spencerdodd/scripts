@@ -4,8 +4,8 @@
 #	run once to update apt sources and install guest additions
 #	run again after reboot to complete
 
-step_one="/tmp/kali_upgrade_step_one_complete"
-step_two="/tmp/kali_upgrade_step_two_complete"
+step_one="/var/tmp/kali_upgrade_step_one_complete"
+step_two="/var/tmp/kali_upgrade_step_two_complete"
 
 if [ ! -f $step_one ]; then
 	echo '[*] updating apt sources.list...'
